@@ -3,7 +3,7 @@ import React from 'react'
 
 const page = async({params}) => {
   const {id} = await params;
-  const res = await fetch('https://category-a8-apple-l35b.vercel.app/tiles.json')
+  const res = await fetch('http://localhost:3000/tiles.json')
   const data = await res.json()
 
   const findData = data.find((details)=> details.id == id)
